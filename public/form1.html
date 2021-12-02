@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register for Vaccination</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style >
+
+body{
+    background-image: url('https://images.unsplash.com/photo-1608326389386-0305acbe600f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29yb25hdmlydXMlMjB2YWNjaW5lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%, 80%;
+    
+}
+#hash{
+   
+    width:130px;
+    margin-top: 10px;
+    margin-left: 155px;
+    
+}
+#ab{
+    width:450px;
+    height:500px;
+    border: black 1px solid;
+    margin-left: 340px;
+    margin-top: 85px;
+    border-radius: 5px;
+    background:rgba(0,0,0,0.4);
+}
+#abc{
+    background-color:rgb(23, 48, 192);
+    height: 85px;
+    
+}
+#ab1{
+    font-size: 15px;
+    color:red;
+}
+#lastname, #firstname{
+    width:240px;
+    height:30px;
+border-width: 1px;
+border-color:black;
+margin-top: -6px;
+margin-left:120px;
+
+}
+#text{
+    color:white;
+    margin-left: 120px;
+    margin-top: 12px;
+    font-size:15px;
+}
+#last, #sel, #pin{
+    color:white;
+    margin-left: 120px;
+  
+    font-size:15px;
+}
+#select{
+    width:115px;
+    height:35px;
+    border-width:1px;
+    border-color:black;
+    margin-left: 120px;
+}
+#pincode{
+    width:160px;
+    height:30px;
+border-width: 1px;
+border-color:black;
+margin-left: 120px;
+margin-top: -6px;
+
+}
+#ab2{
+    color:white;
+}
+  #txt{
+        height:90px;
+        
+        background-color:#34495e;
+    }
+    .navbar{
+        padding: 1rem;
+    }
+    .navbar-nav li{
+        padding-right:28px;
+        
+        font-size:17px;
+       
+       
+    }
+
+     li:hover{
+        border-width: 2px;
+        border-color: black;
+    }
+    .nav-link{
+        font-size: 1.2em;
+       
+    }
+    a:hover{
+       border-width: 2px;
+       border-color: black;
+      font-weight: 600;
+      border-radius: 5px;
+      background-color: rgb(29, 29, 29);
+    }
+   
+     #abcd{
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+#footer{
+       background-color:rgb(83, 167, 185);
+   }
+   #ap{
+       text-decoration: underline;
+       color:white;
+   }
+   #ap:hover{
+       text-decoration: none;
+       background-color: rgb(4, 59, 66);
+       padding:2px;
+   }
+   
+        </style>
+        <script type="text/javascript">
+           $(document).ready(function(){
+                $("input").focus(function(){
+                    $(this).css("background-color","lightyellow");
+                });
+            });
+           
+            $(document).ready(function(){
+                $("select").focus(function(){
+                    $(this).css("background-color","lightyellow");
+                });
+            });
+
+
+        </script>
+<script>
+  function myfunction(){
+    alert("You are successfully registered for Vaccination");
+  }
+</script>
+    </head>
+    <body>
+        <nav id="txt" class="navbar navbar-expand-md navbar-light bg-body sticky-top">
+                <div class="container">
+                    <div class="navbar-brand disabled" href="#"><img src="https://i.pinimg.com/736x/1e/95/5d/1e955d382b15aa96995fa576f964df40.jpg" class="rounded-circle " height="90px" width="105px"></div>
+                   <div id="abcd">Covid Tracker</div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" href="map.html">Corona Updates</a>
+                            </li><li class="nav-item active">
+                                <a class="nav-link text-light"  href="queries.html">Queries</a>
+                            </li><li class="nav-item active">
+                                <a class="nav-link text-light" href="form.html">Vaccination</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+        <div class="container">
+            <div id="ab">
+                <form action="form1.html" onsubmit="myfunction()">
+        <div class="form-group">
+            <label for="firstname" id="text"><b>First Name:</b></label>
+            <input  class="form-control" id="firstname" placeholder="Write your first name here" name="firstname"   required/>
+          </div>
+          <div class="form-group">
+              <label for="lastname" id="last" ><b>Last Name:</b></label>
+              <input type="text" class="form-control" id="lastname" placeholder="Write your last name here" name="lastname" required/>
+          </div>
+          <div class="form-group">
+              <label for="select" id="sel"><b>Select Age:</b></label><br/>
+            <select name="select" id="select" class="custom-select" required
+           >
+           <option>select</option>
+        <option>18-44</option>
+        <option>Above 45</option>
+        
+    </select>
+          </div>
+          <div class="form-group">
+              <label for="pincode" id="pin"><b>Enter Pincode:</b></label>
+              <input type="number" class="form-control" id="pincode" placeholder="xxxxxx" name="pincode" maxlength="6" minlength="6" required>
+          </div>
+          <div class="form-group">
+            <label for="select" id="sel"><b>Select State:</b></label><br/>
+          <select name="select" id="select" class="custom-select" required
+         >
+         <option>Select</option>
+      <option>Andhra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chhattisgarh</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jharkhand</option>
+      <option>Karnataka</option> <option>kerala</option> <option>Madhya Pradesh</option> <option>Maharashtra</option> <option>Manipur</option> <option>Meghalaya</option> <option>Mizoram</option>
+      <option>Nagaland</option> <option>Odisha</option> <option>Punjab</option> <option>Rajasthan</option> <option>Sikkim</option> <option>Tamil Nadu</option> <option>Telangana</option>
+      <option>Tripura</option> <option>Uttar Pradesh</option> <option>Uttarakhand</option> <option>West Bengal</option>
+  </select>
+        </div><br/>
+          <button  id="hash" type="submit" class="btn btn-success" >Register</button>
+                </form>
+        </div>
+        </div>
+        		    <br/><br/><br/><br/><br/><br/><br/><br/>
+<!-- Footer -->
+<div id="footer">
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h3 class="text-uppercase">Covid Tracker</h3>
+          <h5><u>Your complete Covid Guide</u></h5>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Some Other Covid Trackers</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a id="ap" href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare, Gov. of India</a>
+            </li>
+            <li>
+              <a id="ap" href="https://www.mohfw.gov.in/coronvavirushelplinenumber.pdf">MOHFW - HELPLINE NUMBERS [by State]</a>
+            </li>
+            <li>
+              <a id="ap" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO: COVID-19 Home Page</a>
+            </li>
+            <li>
+              <a id="ap" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">Centers for Disease Control and Prevention (CDC)</a>
+            </li>
+            <li>
+                <a  id="ap" href="https://coronavirus.thebaselab.com/">COVID-19 Global Tracker</a>
+              </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Sources</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a id="ap" href="https://bit.ly/patientdb">Crowdsourced Patient Database</a>
+            </li>
+            <li>
+              <a id="ap" href="https://github.com/covid19india/api"> APIs by Covid19India</a>
+            </li>
+            <li>
+              <a id="ap" href="https://github.com/thetrulymadly/coronaclusters"> Contribute to Source Code</a>
+            </li>
+            <li>
+              <a id="ap" href="https://github.com/thetrulymadly/coronaclusters/issues"> Report a bug</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  </div>
+    </body>
+    </html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head><title>
+        Corona Updates
+    </title>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+    body{
+        background-image: url('https://www.lawsonresearch.ca/sites/public/files/styles/header_image/public/istock-1210596217-630x340.jpg?itok=fvxra-K9');
+        background-size: 100%,100%;
+                background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+    background-color:rgb(241, 241, 193) ;
+    }
+#image{
+    margin-left: 100px;
+    display: none;
+}
+h1{
+    margin-left: 300px;
+	background-color:yellow;
+	width:520px;
+	padding:15px;
+}
+#onetest:hover{
+   background-color: blue;
+}
+
+#abcd{
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+   #txt{
+        height:90px;
+        
+        background-color:#34495e;
+    }
+    .navbar{
+        padding: 1rem;
+    }
+    .navbar-nav li{
+        padding-right:28px;
+        
+        font-size:15px;
+       
+       
+    }
+
+     li:hover{
+        border-width: 2px;
+        border-color: black;
+    }
+    .nav-link{
+        font-size: 1.2em;
+       
+    }
+    a:hover{
+       border-width: 2px;
+       border-color: black;
+      font-weight: 600;
+      border-radius: 5px;
+      background-color: rgb(29, 29, 29);
+    }
+    #click:hover{
+        background-color:rgb(230, 164, 34);
+        color:white;
+        cursor: pointer;
+        border-color: 0px;
+    }
+    #click{
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #paraa{
+        font-size: 14px;
+        background-color: white;
+        padding:10px;
+        box-shadow:  2px;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+    #div{
+        color:rgb(253, 70, 70);
+    }
+	
+	#footer{
+       background-color:rgb(83, 167, 185);
+   }
+   #ap{
+       text-decoration: underline;
+       color:white;
+   }
+   #ap:hover{
+       text-decoration: none;
+       background-color: rgb(4, 59, 66);
+       padding:2px;
+   }
+   
+</style>
+<script>
+    $(document).ready(function(){
+      $('body').tooltip({title: "Hooray!", selector: ".btn"}); 
+    });
+    $(document).ready(function(){
+        $("#click").click(function(){
+            $("#image").slideToggle(1000);
+        });
+    });
+    </script>
+</head>
+    <body>
+        <nav id="txt" class="navbar navbar-expand-md navbar-light bg-body sticky-top">
+            <div class="container">
+                <div class="navbar-brand disabled" href="#"><img src="https://i.pinimg.com/736x/1e/95/5d/1e955d382b15aa96995fa576f964df40.jpg" class="rounded-circle " height="90px" width="105px"></div>
+               <div id="abcd">Covid Tracker</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-light" href="map.html">Corona Updates</a>
+                        </li><li class="nav-item active">
+                            <a class="nav-link text-light"  href="queries.html">Queries</a>
+                        </li><li class="nav-item active">
+                            <a class="nav-link text-light" href="form.html">Vaccination</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="container">
+    <h1>Complete Covid Updates!</h1><br/><br/>
+</div>
+<div class="container">
+   <div id="paraa"> Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+    Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.
+    The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.
+
+
+
+
+    
+</br><div id="div">For more Covid Updates click the below link</div>
+    <a id="click">Click here</a></br>
+
+</div>
+<div class="container">
+    
+</br><div id="image"><img src="imgmap.jpg" class="rounded" height="1000px" width="1000px" usemap="#map1"></div>
+    <map name="map1" >
+        <area  href="J&K.html"  shape="poly" coords="251,79,288,115,273,135,276,171,321,200,330,184,354,177,411,198,410,153,446,104,384,103,305,55,267,62" title="J&K" target="_blank" >
+        <area  href="HP.html" shape="poly" coords="334,185,328,206,372,260,382,237,405,223,395,197,366,186,349,177" title="HIMACHAL PRADESH" target="_blank" >
+        <area  href="punjab.html" shape="poly" coords="326,199,295,217,297,240,280,268,313,277,355,245,327,208" title="PUNJAB" target="_blank" >
+        <area  href="Uttarakhand.html" shape="poly" coords="378,258,383,238,410,238,458,263,438,307,406,293,399,284,383,269" title="UTTARAKHAND" target="_blank" >
+        <area  href="haryana.html" shape="poly" coords="294,272,317,293,330,334,352,325,355,338,368,318,356,313,371,266,356,250,330,277,307,277" title="HARYANA" target="_blank" >
+        <area  href="UP.html" shape="poly" coords="375,264,375,362,408,371,417,417,482,419,512,432,521,452,540,352,385,287,380,275" title="UTTAR PRADESH" target="_blank" >
+        <area  href="Rajasthan.html" shape="poly" coords="219,328,277,271,328,333,373,368,388,366,341,398,349,443,303,421,284,474,242,434,197,425,171,342,189,335" title="RAJASTHAN" target="_blank" >
+        <area  href="MP.html" shape="poly" coords="275,511,360,519,442,524,480,456,509,456,500,433,403,424,409,443,391,443,397,370,363,410,352,449,316,459,291,471" title="MADHYA PRADESH" target="_blank" >
+        <area  href="bihar.html" shape="poly" coords="537,433,645,409,647,376,548,356,562,397,532,420" title="BIHAR" target="_blank" >
+        <area  href="jhar.html" shape="poly" coords="530,445,560,485,608,493,627,500,597,470,651,431,639,416,614,439,559,440,533,438,531,444" title="JHARKHAND" target="_blank" >
+        <area  href="wb.html" shape="poly" coords="653,514,686,501,658,427,614,462,603,470,620,477" title="WEST BENGAL" target="_blank" >
+        <area  href="maha.html" shape="poly" coords="238,566,249,693,362,621,387,576,435,588,449,537,330,539,275,524,250,561" title="MAHARASHTRA" target="_blank" >
+        <area  href="guj.html" shape="poly" coords="238,557,273,481,196,432,182,440,128,447,124,463,182,467,146,507,178,540,228,495,232,514" title="GUJARAT" target="_blank" >
+        <area  href="chattisgarh.html" shape="poly" coords="485,460,536,460,545,494,502,544,492,565,475,632,455,612,463,589,454,541,500,477,498,462" title="CHHATTISGARH" target="_blank" >
+        <area  href="" shape="poly" coords="554,606,639,519,605,512,551,503,528,539,511,575,501,608,514,618,537,596,550,607" title="ODISHA" target="_blank" >
+        <area  href="" shape="poly" coords="264,722,265,705,256,700,257,714" title="GOA" target="_blank" >
+        <area  href="" shape="poly" coords="367,697,460,650,406,589,367,627,368,684" title="TELANGANA" target="_blank" >
+        <area  href="karnataka.html" shape="poly" coords="268,726,285,788,332,824,365,792,389,782,356,765,344,756,339,728,364,624,308,665,273,696,272,710" title="KARNATAKA" target="_blank" >
+        <area  href="AP.html" shape="poly" coords="557,612,446,702,435,722,439,769,395,782,374,755,345,737,376,703,471,653,520,621,540,607,546,609" title="ANDHRA PRADESH" target="_blank" >
+        <area  href="kerala.html" shape="poly" coords="344,926,285,795,323,826,338,849,343,872,349,886,347,916" title="KERALA" target="_blank" >
+        <area  href="tn.html" shape="poly" coords="358,936,415,865,425,821,441,777,389,798,371,810,356,823,339,838,355,867,358,892,349,930" title="TAMIL NADU" target="_blank" >
+        <area  href="" shape="poly" coords="654,349,671,345,673,329,664,324,655,336,656,344" title="SIKKIM" target="_blank" >
+        <area  href="meghalaya.html" shape="poly" coords="773,402,713,403,712,390,741,387,763,388,776,394,779,400" title="MEGHALAYA" target="_blank" >
+        <area  href="arun.html" shape="poly" coords="764,348,863,307,867,324,887,322,896,297,871,295,864,277,864,267,842,281,821,274,775,322" title="ARUNACHAL PRADESH" target="_blank" >
+        <area  href="" shape="poly" coords="706,364,807,345,849,318,855,330,799,393,791,420,781,411,784,388,765,375,710,380" title="ASSAM" target="_blank" >
+        <area  href="" shape="poly" coords="814,386,829,384,835,387,847,350,842,344,818,375" title="NAGALAND" target="_blank" >
+        <area  href="manipur.html" shape="poly" coords="803,398,796,431,824,435,835,401,827,389,811,399" title="MANIPUR" target="_blank" >
+        <area  href="" shape="poly" coords="778,436,791,495,801,490,796,474,802,439,787,429,779,436" title="MIZORAM" target="_blank" >
+        <area  href="" shape="poly" coords="746,453,756,438,771,425,774,446,758,469,751,459" title="TRIPURA" target="_blank" >
+    </map>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			<div id="footer">
+<footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+  
+          <!-- Content -->
+          <h3 class="text-uppercase">Covid Tracker</h3>
+          <h5><u>Your complete Covid Guide</u></h5>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Some Other Covid Trackers</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a id="ap" href="https://www.mohfw.gov.in/">Ministry of Health and Family Welfare, Gov. of India</a>
+            </li>
+            <li>
+              <a id="ap" href="https://www.mohfw.gov.in/coronvavirushelplinenumber.pdf">MOHFW - HELPLINE NUMBERS [by State]</a>
+            </li>
+            <li>
+              <a id="ap" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">WHO: COVID-19 Home Page</a>
+            </li>
+            <li>
+              <a id="ap" href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">Centers for Disease Control and Prevention (CDC)</a>
+            </li>
+            <li>
+                <a  id="ap" href="https://coronavirus.thebaselab.com/">COVID-19 Global Tracker</a>
+              </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+  
+          <!-- Links -->
+          <h5 class="text-uppercase">Sources</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a id="ap" href="https://bit.ly/patientdb">Crowdsourced Patient Database</a>
+            </li>
+            <li>
+              <a id="ap" href="https://github.com/covid19india/api"> APIs by Covid19India</a>
+            </li>
+            <li>
+              <a id="ap" href="https://github.com/thetrulymadly/coronaclusters"> Contribute to Source Code</a>
+            </li>
+            <li>
+              <a id="ap" href="https://github.com/thetrulymadly/coronaclusters/issues"> Report a bug</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  </div>
+    </body>
+</html>
